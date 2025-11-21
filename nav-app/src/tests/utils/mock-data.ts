@@ -18,7 +18,7 @@ export const configData = {
     ],
 };
 export const collectionIndexConfig = {
-    collection_index_url: 'https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/index.json',
+    collection_index_url: 'https://raw.githubusercontent.com/mbpmohsen/attack-stix-data-persian/translation-persian/index.json',
 };
 export const versionsConfig = {
     versions: {
@@ -152,11 +152,11 @@ export const collectionIndex = {
             versions: [
                 {
                     version: '14.1',
-                    url: 'https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-14.1.json',
+                    url: 'https://raw.githubusercontent.com/mbpmohsen/attack-stix-data-persian/translation-persian/enterprise-attack/enterprise-attack-14.1.json',
                 },
                 {
                     version: '14.0',
-                    url: 'https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-14.0.json',
+                    url: 'https://raw.githubusercontent.com/mbpmohsen/attack-stix-data-persian/translation-persian/enterprise-attack/enterprise-attack-14.0.json',
                 },
             ],
         },
@@ -166,11 +166,11 @@ export const collectionIndex = {
             versions: [
                 {
                     version: '14.1',
-                    url: 'https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/mobile-attack/mobile-attack-14.1.json',
+                    url: 'https://raw.githubusercontent.com/mbpmohsen/attack-stix-data-persian/translation-persian/mobile-attack/mobile-attack-14.1.json',
                 },
                 {
                     version: '1.0',
-                    url: 'https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-1.0.json',
+                    url: 'https://raw.githubusercontent.com/mbpmohsen/attack-stix-data-persian/translation-persian/enterprise-attack/enterprise-attack-1.0.json',
                 },
             ],
         },
@@ -180,7 +180,7 @@ export const collectionIndex = {
             versions: [
                 {
                     version: '14.1',
-                    url: 'https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/ics-attack/ics-attack-14.1.json',
+                    url: 'https://raw.githubusercontent.com/mbpmohsen/attack-stix-data-persian/translation-persian/ics-attack/ics-attack-14.1.json',
                     modified: '2023-11-14T14:00:00.188Z',
                 },
             ],
