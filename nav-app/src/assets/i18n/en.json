@@ -1,0 +1,130 @@
+{
+  "NAV": {
+    "NEW_LAYER": "New layer",
+    "OPEN_LAYER": "Open existing layer",
+    "HELP": "Help",
+    "CHANGELOG": "Changelog",
+    "LANG_FA": "فارسی",
+    "LANG_EN": "English"
+  },
+  "MAIN": {
+    "DESCRIPTION": "The ATT&CK Navigator is a web-based tool for annotating and exploring ATT&CK matrices. It can be used to visualize defensive coverage, red/blue team planning, the frequency of detected techniques, and more."
+  },
+  "COMMON": {
+    "START": "Start",
+    "WARNING": "WARNING",
+    "DISMISS": "Dismiss",
+    "OR": "OR",
+    "NONE": "none",
+    "CREATE_LAYER": "Create layer",
+    "CUSTOM_NAVIGATOR_URL": "custom navigator url",
+    "COPIED": "copied"
+  },
+  "TABS": {
+    "SAFARI_WARNING_P1": "We have detected that you are using the Safari browser. As of Navigator version 4.3, Safari versions 13 and below are not supported due to an unfixable freeze that can occur when selecting a layer tab.",
+    "SAFARI_WARNING_P2": "We recommend you use Chrome or Firefox instead. You can continue to use the Navigator in Safari (versions 13 and below), but you may lose work if the application freezes.",
+    "OUTDATED_LAYER": "Outdated Layer",
+    "VERSION_WARNING_TEXT1": "The uploaded layer version ({{objVersion}}) does not match Navigator's layer version ({{globalVersion}}). The layer configuration may not be fully restored.",
+    "VERSION_WARNING_TEXT2": "View the latest Layer File Format specification and the changelog for more information:",
+    "VERSION_WARNING_LAYER_SPEC_LINK": "Layer File Format v{{globalVersion}}",
+    "THEME_LABEL": "theme",
+    "THEME_DARK": "dark",
+    "THEME_LIGHT": "light",
+    "THEME_SYSTEM": "use system",
+    "NEW_LAYER_PANEL_DESC": "Create a new empty layer.",
+    "MORE_OPTIONS": "More Options",
+    "SELECT_VERSION": "Select a version",
+    "SELECT_DOMAIN": "Select a domain",
+    "VERSION_NOTE": "*Note: ATT&CK Versions prior to v{{minVersion}} are not supported by Navigator v{{navVersion}}.",
+    "BUNDLE_URL_LABEL": "Collection or STIX bundle URL",
+    "BUNDLE_VERSION_LABEL": "Bundle version number",
+    "BUNDLE_VERSION_HINT": "ATT&CK version (e.g. 12)",
+    "BUNDLE_DOMAIN_LABEL": "Bundle domain",
+    "BUNDLE_DOMAIN_HINT": "Domain identifier (e.g. defending-iaas)",
+    "CREATE_LAYER_FROM_VERSION": "Create layer from version",
+    "CREATE_LAYER_FROM_BUNDLE": "Create layer from bundle",
+    "OPEN_LAYER_PANEL_DESC": "Load a layer from your computer or a URL",
+    "UPLOAD_FROM_LOCAL": "Upload from local",
+    "LOAD_FROM_URL": "Load from URL",
+    "CREATE_FROM_OTHER_TITLE": "Create Layer from Other Layers",
+    "CREATE_FROM_OTHER_DESC": "Select layers to inherit properties from",
+    "DOMAIN_LABEL": "domain",
+    "SCORE_EXPRESSION_LABEL": "score expression",
+    "GRADIENT_LABEL": "gradient",
+    "COLORING_LABEL": "coloring",
+    "COMMENTS_LABEL": "comments",
+    "LINKS_LABEL": "links",
+    "METADATA_LABEL": "metadata",
+    "STATES_LABEL": "states",
+    "FILTERS_LABEL": "filters",
+    "LEGEND_LABEL": "legend",
+    "CUSTOM_NAV_TITLE": "Create Customized Navigator",
+    "CUSTOM_NAV_DESC": "Create a hyperlink to a customized ATT&CK Navigator",
+    "DEFAULT_LAYERS_TITLE": "Default Layers",
+    "DEFAULT_LAYER_LABEL": "default layer {{index}}",
+    "ADD_DEFAULT_LAYER": "Add default layer",
+    "DEFAULT_LAYERS_INFO": "Enter the URLs of layers hosted on the web. The custom navigator will open these layers by default.",
+    "NAV_FEATURES_TITLE": "Navigator Features",
+    "COPY_TOOLTIP": "copy",
+    "DOMAIN_HELP": "Select the domain for the new layer. Only layers of the same domain and version can be merged.",
+
+    "SCORE_EXPRESSION_INTRO": "Use constants (numbers) and layer variables (highlighted in yellow above) to write an expression for the initial value of scores in the new layer.",
+    "SCORE_EXPRESSION_OPS_INTRO": " A full list of supported operations can be found ",
+    "SCORE_EXPRESSION_OPS_LINK_TEXT": "here",
+    "SCORE_EXPRESSION_BLANK_INFO": ". Leave blank to initialize scores to 0.",
+    "SCORE_EXPRESSION_VARS_INTRO": "Here is a list of available layer variables:",
+
+    "GRADIENT_HELP": "Select which layer to import the scoring gradient from. Leave blank to initialize with the default scoring gradient.",
+    "COLORING_HELP": "Select which layer to import manually assigned colors from. Leave blank to initialize with no colors.",
+    "COMMENTS_HELP": "Select which layer to import comments from. Leave blank to initialize with no comments.",
+    "LINKS_HELP": "Select which layer to import technique links from. Leave blank to initialize without links.",
+    "METADATA_HELP": "Select which layer to import technique metadata from. Leave blank to initialize without metadata.",
+    "STATES_HELP": "Select which layer to import enabled/disabled states from. Leave blank to initialize all to enabled.",
+    "FILTERS_HELP": "Select which layer to import filters from. Leave blank to initialize with no filters.",
+    "LEGEND_HELP": "Select which layer to import the legend from. Leave blank to initialize with an empty legend."
+  },
+  "CONFIG": {
+    "CUSTOMIZE": {
+      "multiselect": {
+        "LABEL": "Multiselect panel",
+        "DESC": "Disable to remove the multiselect panel from the interface."
+      },
+      "export_render": {
+        "LABEL": "Render layer button",
+        "DESC": "Disable to remove the button to render the current layer."
+      },
+      "export_excel": {
+        "LABEL": "Export to Excel button",
+        "DESC": "Disable to remove the button to export the current layer to MS Excel (.xlsx) format."
+      },
+      "legend": {
+        "LABEL": "Legend panel",
+        "DESC": "Disable to remove the legend panel from the interface."
+      },
+      "background_color": {
+        "LABEL": "Background color effect",
+        "DESC": "Disable to remove the background color effect on manually assigned colors."
+      },
+      "non_aggregate_score_color": {
+        "LABEL": "Non-aggregate score colors",
+        "DESC": "Disable to remove the color effect on non-aggregate scores."
+      },
+      "aggregate_score_color": {
+        "LABEL": "Aggregate score colors",
+        "DESC": "Disable to remove the color effect on aggregate scores."
+      },
+      "comment_underline": {
+        "LABEL": "Comment underline",
+        "DESC": "Disable to remove the comment underline effect on techniques."
+      },
+      "metadata_underline": {
+        "LABEL": "Metadata underline",
+        "DESC": "Disable to remove the metadata underline effect on techniques."
+      },
+      "link_underline": {
+        "LABEL": "Link underline",
+        "DESC": "Disable to remove the hyperlink underline effect on techniques."
+      }
+    }
+  }
+}
