@@ -18,8 +18,204 @@
     "NONE": "none",
     "CREATE_LAYER": "Create layer",
     "CUSTOM_NAVIGATOR_URL": "custom navigator url",
-    "COPIED": "copied"
+    "COPIED": "copied",
+    "CLOSE": "Close",
+    "COMMENT": "Comment",
+    "DISABLED": "Disabled",
+    "SCORE": "Score",
+    "TECHNIQUES": "Techniques",
+      "BACK": "Back",
+      "NEXT": "Next",
+      "SKIP": "Skip",
+      "DONE": "Done"
   },
+    "LAYER_SETTINGS": {
+        "INFO_TITLE": "Layer Information",
+        "NAME_LABEL": "Name",
+        "DESCRIPTION_LABEL": "Description",
+        "DOMAIN_LABEL": "Domain",
+        "VERSION_LABEL": "Version",
+
+        "METADATA_TITLE": "Metadata",
+        "LINKS_TITLE": "Links",
+
+        "MATRIX_LAYOUT_TITLE": "Matrix Layout",
+        "LAYOUT_OPTION": {
+            "side": "Side layout",
+            "flat": "Flat layout",
+            "mini": "Mini layout"
+        },
+
+        "LABELS_TITLE": "Labels",
+        "SHOW_IDS": "show IDs",
+        "SHOW_NAMES": "show names",
+
+        "AGGREGATE_SCORES_TITLE": "Aggregate Scores",
+        "SHOW_AGG_SCORES": "show aggregate scores",
+        "COUNT_UNSCORED_AS_ZERO": "count unscored techniques as 0",
+        "AGG_FUNC_LABEL": "Aggregate function",
+        "AGG_FUNC_OPTION": {
+            "average": "average",
+            "sum": "sum",
+            "max": "maximum",
+            "min": "minimum"
+        }
+    },
+    "DATA_TABLE": {
+        "SECTION": {
+            "SELECTION": "Selection Controls",
+            "LAYER": "Layer Controls",
+            "TECHNIQUE": "Technique Controls"
+        },
+        "SELECTION": {
+            "SEARCH_TOOLTIP": "search & multiselect",
+            "DESELECT_TOOLTIP": "Deselect {{count}} techniques",
+            "DESELECT_LABEL": "Deselect {{count}} Techniques",
+            "BEHAVIOR_TOOLTIP": "selection behavior",
+            "ACROSS_TACTICS": "select techniques across tactics",
+            "WITH_PARENT": "select sub-techniques with parent",
+            "VISIBLE_ONLY": "select only visible techniques",
+            "SETTINGS_TOOLTIP": "selection control settings"
+        },
+        "COMMON_SETTINGS": {
+            "SHOW_CONTROL_LABELS": "Show Control Labels",
+            "INCLUDED_CONTROLS": "Included Controls:"
+        },
+        "CONTROL_NAME": {
+            "search": "Search",
+            "deselect_all": "Deselect All",
+            "selecting_techniques": "Selection Behavior",
+            "layer_settings": "Layer Settings",
+            "download_layer": "Export",
+            "filters": "Filters",
+            "sorting": "Sorting",
+            "color_setup": "Color Setup",
+            "toggle_hide_disabled": "Show/Hide Disabled",
+            "subtechniques": "Sub-techniques",
+            "disable_techniques": "Enable/Disable Techniques",
+            "manual_color": "Color",
+            "scoring": "Scoring",
+            "comments": "Comments",
+            "links": "Links",
+            "metadata": "Metadata",
+            "clear_annotations": "Clear Annotations"
+        },
+        "LAYER": {
+            "SETTINGS_TOOLTIP": "layer settings",
+
+            "EXPORT_TOOLTIP": "export",
+            "EXPORT_TITLE": "Export",
+            "EXPORT_OPTIONS_TITLE": "Options",
+            "EXPORT_SINGLE_JSON_TOOLTIP": "download single layer as JSON",
+            "EXPORT_ALL_JSON_TOOLTIP": "download all layers as JSON",
+            "EXPORT_SINGLE_EXCEL_TOOLTIP": "export single layer to Excel",
+            "EXPORT_ALL_EXCEL_TOOLTIP": "export all layers to Excel",
+            "EXPORT_RENDER_TOOLTIP": "render layer to SVG",
+            "EXPORT_VISIBLE_ONLY_LABEL": "Only download annotations on visible techniques",
+            "EXPORT_HIDDEN_ONE": "{{count}} hidden technique has annotations",
+            "EXPORT_HIDDEN_MANY": "{{count}} hidden techniques have annotations",
+
+            "FILTERS_TOOLTIP": "filters",
+            "FILTERS_PLATFORMS_LABEL": "Platforms",
+            "FILTERS_NO_DATA": "Data does not include platforms",
+
+            "SORT_TOOLTIP_ALPHA_ASC": "sorting alphabetically ascending",
+            "SORT_TOOLTIP_ALPHA_DESC": "sorting alphabetically descending",
+            "SORT_TOOLTIP_NUM_ASC": "sorting by score ascending",
+            "SORT_TOOLTIP_NUM_DESC": "sorting by score descending",
+            "SORT_LABEL_ALPHA_ASC": "A-Z Ascending",
+            "SORT_LABEL_ALPHA_DESC": "A-Z Descending",
+            "SORT_LABEL_NUM_ASC": "Numerically Ascending",
+            "SORT_LABEL_NUM_DESC": "Numerically Descending",
+
+            "COLOR_SETUP_TOOLTIP": "color setup",
+            "COLOR_TACTIC_ROW_LABEL": "Tactic Row Background",
+            "COLOR_SHOW_LABEL": "show",
+            "COLOR_SCORE_GRADIENT_LABEL": "Scoring Gradient",
+            "COLOR_MIN_VALUE_LABEL": "Low value:",
+            "COLOR_MAX_VALUE_LABEL": "High value:",
+            "COLOR_REMOVE_BUTTON": "remove",
+            "COLOR_ADD_BUTTON": "add another color",
+            "COLOR_PRESETS_BUTTON": "presets",
+            "COLOR_PRESET_RED_GREEN": "red to green",
+            "COLOR_PRESET_GREEN_RED": "green to red",
+            "COLOR_PRESET_BLUE_RED": "blue to red",
+            "COLOR_PRESET_RED_BLUE": "red to blue",
+            "COLOR_PRESET_TRANSPARENT_BLUE": "transparent to blue",
+            "COLOR_PRESET_TRANSPARENT_RED": "transparent to red",
+
+            "HIDE_DISABLED_TOOLTIP_HIDE": "Hide Disabled",
+            "HIDE_DISABLED_TOOLTIP_SHOW": "Show Disabled",
+            "HIDE_DISABLED_LABEL_HIDE": "Hide Disabled",
+            "HIDE_DISABLED_LABEL_SHOW": "Show Disabled",
+
+            "SUBTECHNIQUES_TOOLTIP_EXPAND_ALL": "expand subtechniques",
+            "SUBTECHNIQUES_TOOLTIP_EXPAND_ANNOTATED": "expand annotated subtechniques",
+            "SUBTECHNIQUES_TOOLTIP_COLLAPSE": "collapse subtechniques",
+            "SUBTECHNIQUES_LABEL_EXPAND_ALL": "Expand All Sub-techniques",
+            "SUBTECHNIQUES_LABEL_EXPAND_ANNOTATED": "Expand Annotated Sub-techniques",
+            "SUBTECHNIQUES_LABEL_COLLAPSE": "Collapse Sub-techniques",
+
+            "LAYER_SETTINGS_TOOLTIP": "layer control settings"
+        },
+        "TECHNIQUE": {
+            "DISABLE_TOOLTIP": "toggle state",
+            "MANUAL_COLOR_TOOLTIP": "background color",
+            "SCORE_TOOLTIP": "scoring",
+            "SCORE_LABEL": "score",
+            "SCORE_NOT_NUMBER": "not a number",
+            "COMMENT_TOOLTIP": "comment",
+            "COMMENT_LABEL": "comments",
+            "LINK_TOOLTIP": "link",
+            "LINK_TOOLTIP_DISABLED": "cannot edit links on selected techniques with differing links",
+            "METADATA_TOOLTIP": "metadata",
+            "METADATA_TOOLTIP_DISABLED": "cannot edit metadata on selected techniques with differing metadata",
+            "CLEAR_TOOLTIP": "clear annotations on selected",
+            "SETTINGS_TOOLTIP": "technique control settings",
+            "NO_COLOR_LABEL": "no color"
+        },
+        "TOOLBAR": {
+            "STICKY_TOOLTIP_ENABLE": "enable sticky toolbar",
+            "STICKY_TOOLTIP_DISABLE": "disable sticky toolbar"
+        },
+        "LEGEND": {
+            "TITLE": "legend",
+            "ADD_ITEM": "Add Item",
+            "CLEAR": "Clear",
+            "REMOVE_ITEM_ARIA": "remove legend item"
+        }
+    },
+    "LAYER_UPGRADE": {
+        "TITLE": "Layer Upgrade",
+        "DESCRIPTION": "Review techniques which have been added, changed, replaced, or removed from the knowledge base since ATT&CK v{{fromVersion}} and update your Navigator layer to reflect these changes.",
+        "VIEW_VERSIONS": "View versions of ATT&CK",
+
+        "STEP_LABEL_REVIEW": "Review {{section}}",
+        "OPTIONS_TITLE": "Options",
+
+        "FILTER_ANNOTATED_ONLY": "show annotated techniques only",
+        "FILTER_ANNOTATED_ONLY_TOOLTIP": "no annotated techniques",
+        "FILTER_REVIEW_ALL_LABEL": "mark all as reviewed",
+        "FILTER_EXPAND_VISIBLE_LABEL": "expand visible techniques",
+
+        "DND_TOOLTIP": "Drag and drop to copy annotations to the desired tactics in ATT&CK v{{version}}.",
+        "CLEAR_ANNOTATIONS_TOOLTIP": "clear annotations",
+        "COPY_ANNOTATIONS_TOOLTIP": "copy annotations",
+        "REVERT_COPY_TOOLTIP": "revert copy",
+
+        "REVIEWED_LABEL": "reviewed",
+        "NO_OBJECTS": "No objects to show",
+
+        "STEP_REVIEWED_COUNTER": "Reviewed {{reviewed}}/{{total}} techniques",
+
+        "FINISH_STEP": "Finish",
+        "OVERVIEW_TITLE": "Overview",
+
+        "SUMMARY_REVIEWED": "Reviewed {{reviewed}}/{{total}} techniques",
+        "SUMMARY_REVIEWED_ANNOTATED": "Reviewed {{reviewed}}/{{total}} annotated techniques",
+        "SUMMARY_NO_OBJECTS": "No objects to review",
+        "SUMMARY_SKIPPED": "Skipped"
+    },
   "TABS": {
     "SAFARI_WARNING_P1": "We have detected that you are using the Safari browser. As of Navigator version 4.3, Safari versions 13 and below are not supported due to an unfixable freeze that can occur when selecting a layer tab.",
     "SAFARI_WARNING_P2": "We recommend you use Chrome or Firefox instead. You can continue to use the Navigator in Safari (versions 13 and below), but you may lose work if the application freezes.",
@@ -83,48 +279,254 @@
     "FILTERS_HELP": "Select which layer to import filters from. Leave blank to initialize with no filters.",
     "LEGEND_HELP": "Select which layer to import the legend from. Leave blank to initialize with an empty legend."
   },
-  "CONFIG": {
-    "CUSTOMIZE": {
-      "multiselect": {
-        "LABEL": "Multiselect panel",
-        "DESC": "Disable to remove the multiselect panel from the interface."
-      },
-      "export_render": {
-        "LABEL": "Render layer button",
-        "DESC": "Disable to remove the button to render the current layer."
-      },
-      "export_excel": {
-        "LABEL": "Export to Excel button",
-        "DESC": "Disable to remove the button to export the current layer to MS Excel (.xlsx) format."
-      },
-      "legend": {
-        "LABEL": "Legend panel",
-        "DESC": "Disable to remove the legend panel from the interface."
-      },
-      "background_color": {
-        "LABEL": "Background color effect",
-        "DESC": "Disable to remove the background color effect on manually assigned colors."
-      },
-      "non_aggregate_score_color": {
-        "LABEL": "Non-aggregate score colors",
-        "DESC": "Disable to remove the color effect on non-aggregate scores."
-      },
-      "aggregate_score_color": {
-        "LABEL": "Aggregate score colors",
-        "DESC": "Disable to remove the color effect on aggregate scores."
-      },
-      "comment_underline": {
-        "LABEL": "Comment underline",
-        "DESC": "Disable to remove the comment underline effect on techniques."
-      },
-      "metadata_underline": {
-        "LABEL": "Metadata underline",
-        "DESC": "Disable to remove the metadata underline effect on techniques."
-      },
-      "link_underline": {
-        "LABEL": "Link underline",
-        "DESC": "Disable to remove the hyperlink underline effect on techniques."
-      }
+    "CONFIG": {
+        "CUSTOMIZE": {
+            "multiselect": {
+                "LABEL": "Multiselect panel",
+                "DESC": "Disable to remove the multiselect panel from the interface."
+            },
+            "export_render": {
+                "LABEL": "Render layer button",
+                "DESC": "Disable to remove the button to render the current layer."
+            },
+            "export_excel": {
+                "LABEL": "Export to Excel button",
+                "DESC": "Disable to remove the button to export the current layer to MS Excel (.xlsx) format."
+            },
+            "legend": {
+                "LABEL": "Legend panel",
+                "DESC": "Disable to remove the legend panel from the interface."
+            },
+            "background_color": {
+                "LABEL": "Background color effect",
+                "DESC": "Disable to remove the background color effect on manually assigned colors."
+            },
+            "non_aggregate_score_color": {
+                "LABEL": "Non-aggregate score colors",
+                "DESC": "Disable to remove the color effect on non-aggregate scores."
+            },
+            "aggregate_score_color": {
+                "LABEL": "Aggregate score colors",
+                "DESC": "Disable to remove the color effect on aggregate scores."
+            },
+            "comment_underline": {
+                "LABEL": "Comment underline",
+                "DESC": "Disable to remove the comment underline effect on techniques."
+            },
+            "metadata_underline": {
+                "LABEL": "Metadata underline",
+                "DESC": "Disable to remove the metadata underline effect on techniques."
+            },
+            "link_underline": {
+                "LABEL": "Link underline",
+                "DESC": "Disable to remove the hyperlink underline effect on techniques."
+            }
+        },
+        "FEATURES": {
+            "leave_site_dialog": {
+                "LABEL": "Leave site dialog",
+                "DESC": "Disable to remove the dialog prompt when leaving the site."
+            },
+            "tabs": {
+                "LABEL": "Tabs",
+                "DESC": "Disable to remove the ability to open new tabs."
+            },
+            "header": {
+                "LABEL": "Header",
+                "DESC": "Disable to remove the header containing the banner."
+            },
+            "selection_controls": {
+                "LABEL": "Selection controls",
+                "DESC": "Disable to disable all subfeatures under selection controls.",
+                "SUB": {
+                    "search": {
+                        "LABEL": "Search & multiselect",
+                        "DESC": "Disable to remove the technique search panel from the interface."
+                    },
+                    "deselect_all": {
+                        "LABEL": "Deselect techniques",
+                        "DESC": "Disable to remove the deselect-all button from the interface."
+                    },
+                    "selecting_techniques": {
+                        "LABEL": "Selection behavior",
+                        "DESC": "Disable to remove the ability to select techniques."
+                    }
+                }
+            },
+            "layer_controls": {
+                "LABEL": "Layer controls",
+                "DESC": "Disable to disable all subfeatures under layer controls.",
+                "SUB": {
+                    "layer_settings": {
+                        "LABEL": "Layer settings",
+                        "DESC": "Disable to remove the layer info panel (name, description, and metadata). The layer can still be renamed in the tab."
+                    },
+                    "download_layer": {
+                        "LABEL": "Export",
+                        "DESC": "Disable to remove the button to download the layer."
+                    },
+                    "filters": {
+                        "LABEL": "Filters",
+                        "DESC": "Disable to remove the filters panel from the interface."
+                    },
+                    "sorting": {
+                        "LABEL": "Sorting",
+                        "DESC": "Disable to remove the sorting button from the interface."
+                    },
+                    "color_setup": {
+                        "LABEL": "Color setup",
+                        "DESC": "Disable to remove the color setup panel, including controls for the scoring gradient and tactic row colors."
+                    },
+                    "toggle_hide_disabled": {
+                        "LABEL": "Show/hide disabled",
+                        "DESC": "Disable to remove the hide-disabled-techniques button from the interface."
+                    },
+                    "subtechniques": {
+                        "LABEL": "Sub-techniques",
+                        "DESC": "Disable to remove all sub-technique features from the interface."
+                    }
+                }
+            },
+            "technique_controls": {
+                "LABEL": "Technique controls",
+                "DESC": "Disable to disable all subfeatures under technique controls.",
+                "SUB": {
+                    "disable_techniques": {
+                        "LABEL": "Toggle state",
+                        "DESC": "Disable to remove the ability to disable techniques."
+                    },
+                    "manual_color": {
+                        "LABEL": "Background color",
+                        "DESC": "Disable to remove the ability to assign manual colors to techniques."
+                    },
+                    "scoring": {
+                        "LABEL": "Scoring",
+                        "DESC": "Disable to remove the ability to score techniques."
+                    },
+                    "comments": {
+                        "LABEL": "Comments",
+                        "DESC": "Disable to remove the ability to add comments to techniques."
+                    },
+                    "links": {
+                        "LABEL": "Links",
+                        "DESC": "Disable to remove the ability to assign hyperlinks to techniques."
+                    },
+                    "metadata": {
+                        "LABEL": "Metadata",
+                        "DESC": "Disable to remove the ability to add metadata to techniques."
+                    },
+                    "clear_annotations": {
+                        "LABEL": "Clear annotations on selected",
+                        "DESC": "Disable to remove the button to clear all annotations on the selected techniques."
+                    }
+                }
+            },
+            "toolbar_controls": {
+                "LABEL": "Toolbar controls",
+                "DESC": "Disable to disable all subfeatures under toolbar controls.",
+                "SUB": {
+                    "sticky_toolbar": {
+                        "LABEL": "Sticky toolbar toggle",
+                        "DESC": "Disable to remove the ability to enable or disable the sticky toolbar."
+                    }
+                }
+            }
+        }
+    },
+    "SVG_EXPORT": {
+        "IE_WARNING": "Warning: this interface is not fully compatible with your browser. For best results please switch to Edge, Chrome, or Firefox.",
+
+        "TOOLTIP_THEME": "theme",
+        "TOOLTIP_UNIT": "toggle measurement unit",
+        "TOOLTIP_IMAGE_SIZE": "image size",
+        "TOOLTIP_TEXT": "text",
+        "TOOLTIP_LEGEND": "legend",
+        "TOOLTIP_VISIBILITY": "display settings",
+        "TOOLTIP_DOWNLOAD": "download SVG",
+
+        "ORIENTATION_LABEL": "orientation",
+        "ORIENTATION_PORTRAIT": "Portrait",
+        "ORIENTATION_LANDSCAPE": "Landscape",
+
+        "SIZE_LABEL": "size",
+        "SIZE_CUSTOM": "Custom",
+        "SIZE_LETTER": "US Letter: 8.5x11",
+        "SIZE_LEGAL": "US Legal: 8.5x14",
+        "SIZE_SMALL": "Small: 11x17",
+        "SIZE_MEDIUM": "Medium: 18x24",
+        "SIZE_LARGE": "Large: 24x36",
+
+        "WIDTH_LABEL": "width",
+        "HEIGHT_LABEL": "height",
+        "HEADER_HEIGHT_LABEL": "header height",
+
+        "FONT_LABEL": "font",
+        "FONT_SERIF": "serif",
+        "FONT_SANS_SERIF": "sans-serif",
+        "FONT_MONOSPACE": "monospace",
+        "FONT_SIZE_LABEL": "font size",
+        "TEXT_OVERFLOW_WARNING": "cell text is overflowing",
+        "AUTO_FIT_LABEL": "auto-fit font size",
+
+        "LEGEND_DOCKED_LABEL": "dock legend in header",
+        "LEGEND_X_LABEL": "legend X position",
+        "LEGEND_Y_LABEL": "legend Y position",
+        "LEGEND_WIDTH_LABEL": "legend width",
+        "LEGEND_HEIGHT_LABEL": "legend height",
+
+        "SHOW_HEADER_LABEL": "show header",
+        "SHOW_ABOUT_LABEL": "show about",
+        "SHOW_DOMAIN_LABEL": "show domain",
+        "SHOW_FILTERS_LABEL": "show filters",
+        "SHOW_LEGEND_LABEL": "show legend",
+        "SHOW_GRADIENT_LABEL": "show gradient score",
+
+        "SUBTECHNIQUES_LABEL": "sub-techniques",
+        "SUBTECHNIQUES_SHOW_ALL": "show all",
+        "SUBTECHNIQUES_SHOW_EXPANDED": "show expanded",
+        "SUBTECHNIQUES_SHOW_NONE": "show none",
+
+        "APPLY": "apply",
+        "CELL_BORDER_LABEL": "cell border",
+        "LOADING": "loading..."
+    },
+    "SEARCH_PANEL": {
+        "SEARCH_PLACEHOLDER": "Search",
+        "SETTINGS_TITLE": "Search Settings",
+
+        "TECHNIQUES_HEADER": "Techniques ({{count}})",
+        "STIX_TYPE_HEADER": "{{label}} ({{count}})",
+        "DATA_COMPONENTS_HEADER": "Data Components ({{count}})",
+
+        "SELECT_ALL": "select all",
+        "DESELECT_ALL": "deselect all",
+        "VIEW": "view",
+        "SELECT": "select",
+        "DESELECT": "deselect",
+
+        "NO_RESULTS_TECHNIQUES": "no results for techniques",
+        "NO_RESULTS_FOR": "no results for {{label}}",
+        "NO_RESULTS_DATA_SOURCES": "no results for data sources"
+    },
+    "CONTEXT_MENU": {
+        "PIN_UNPIN_TOOLTIP": "pin/unpin tooltip",
+
+        "SELECT": "select",
+        "ADD_TO_SELECTION": "add to selection",
+        "REMOVE_FROM_SELECTION": "remove from selection",
+
+        "SELECT_ALL": "select all",
+        "DESELECT_ALL": "deselect all",
+        "INVERT_SELECTION": "invert selection",
+
+        "SELECT_ANNOTATED": "select annotated",
+        "SELECT_UNANNOTATED": "select unannotated",
+
+        "SELECT_ALL_IN_TACTIC": "select all techniques in tactic",
+        "DESELECT_ALL_IN_TACTIC": "deselect all techniques in tactic",
+
+        "VIEW_TECHNIQUE": "view technique",
+        "VIEW_TACTIC": "view tactic"
     }
-  }
+
 }

@@ -10,7 +10,132 @@
   "MAIN": {
     "DESCRIPTION": "ناوبر ATT&CK ابزاری مبتنی بر وب برای حاشیه‌نویسی و کاوش ماتریس‌های ATT&CK است. می‌توان از آن برای تجسم پوشش دفاعی، برنامه‌ریزی تیم قرمز/آبی، فراوانی تکنیک‌های شناسایی‌شده و موارد دیگر استفاده کرد."
   },
-  "COMMON": {
+    "DATA_TABLE": {
+        "SECTION": {
+            "SELECTION": "کنترل‌های انتخاب",
+            "LAYER": "کنترل‌های لایه",
+            "TECHNIQUE": "کنترل‌های تکنیک"
+        },
+        "SELECTION": {
+            "SEARCH_TOOLTIP": "جستجو و انتخاب چندتایی",
+            "DESELECT_TOOLTIP": "لغو انتخاب {{count}} تکنیک",
+            "DESELECT_LABEL": "لغو انتخاب {{count}} تکنیک",
+            "BEHAVIOR_TOOLTIP": "رفتار انتخاب",
+            "ACROSS_TACTICS": "انتخاب تکنیک‌ها در همهٔ تاکتیک‌ها",
+            "WITH_PARENT": "انتخاب زیرتکنیک‌ها همراه با تکنیک والد",
+            "VISIBLE_ONLY": "انتخاب فقط تکنیک‌های قابل‌مشاهده",
+            "SETTINGS_TOOLTIP": "تنظیمات کنترل‌های انتخاب"
+        },
+        "COMMON_SETTINGS": {
+            "SHOW_CONTROL_LABELS": "نمایش عنوان کنترل‌ها",
+            "INCLUDED_CONTROLS": "کنترل‌های موجود:"
+        },
+        "CONTROL_NAME": {
+            "search": "جستجو",
+            "deselect_all": "لغو انتخاب همه",
+            "selecting_techniques": "رفتار انتخاب",
+            "layer_settings": "تنظیمات لایه",
+            "download_layer": "خروجی گرفتن",
+            "filters": "فیلترها",
+            "sorting": "مرتب‌سازی",
+            "color_setup": "تنظیم رنگ",
+            "toggle_hide_disabled": "نمایش/مخفی‌سازی غیرفعال‌ها",
+            "subtechniques": "زیرتکنیک‌ها",
+            "disable_techniques": "فعال/غیرفعال کردن تکنیک",
+            "manual_color": "رنگ",
+            "scoring": "امتیازدهی",
+            "comments": "یادداشت‌ها",
+            "links": "لینک‌ها",
+            "metadata": "فراداده",
+            "clear_annotations": "حذف حاشیه‌نویسی‌ها"
+        },
+        "LAYER": {
+            "SETTINGS_TOOLTIP": "تنظیمات لایه",
+
+            "EXPORT_TOOLTIP": "خروجی",
+            "EXPORT_TITLE": "خروجی",
+            "EXPORT_OPTIONS_TITLE": "گزینه‌ها",
+            "EXPORT_SINGLE_JSON_TOOLTIP": "دانلود لایهٔ فعلی به صورت JSON",
+            "EXPORT_ALL_JSON_TOOLTIP": "دانلود همهٔ لایه‌ها به صورت JSON",
+            "EXPORT_SINGLE_EXCEL_TOOLTIP": "خروجی لایهٔ فعلی به Excel",
+            "EXPORT_ALL_EXCEL_TOOLTIP": "خروجی همهٔ لایه‌ها به Excel",
+            "EXPORT_RENDER_TOOLTIP": "رندر لایه به صورت SVG",
+            "EXPORT_VISIBLE_ONLY_LABEL": "فقط حاشیه‌نویسی‌های تکنیک‌های قابل‌مشاهده دانلود شود",
+            "EXPORT_HIDDEN_ONE": "{{count}} تکنیک پنهان دارای حاشیه‌نویسی است",
+            "EXPORT_HIDDEN_MANY": "{{count}} تکنیک پنهان دارای حاشیه‌نویسی هستند",
+
+            "FILTERS_TOOLTIP": "فیلترها",
+            "FILTERS_PLATFORMS_LABEL": "پلتفرم‌ها",
+            "FILTERS_NO_DATA": "داده‌ها شامل اطلاعات پلتفرم نیستند",
+
+            "SORT_TOOLTIP_ALPHA_ASC": "مرتب‌سازی حروفی صعودی",
+            "SORT_TOOLTIP_ALPHA_DESC": "مرتب‌سازی حروفی نزولی",
+            "SORT_TOOLTIP_NUM_ASC": "مرتب‌سازی بر اساس امتیاز صعودی",
+            "SORT_TOOLTIP_NUM_DESC": "مرتب‌سازی بر اساس امتیاز نزولی",
+            "SORT_LABEL_ALPHA_ASC": "حروفی صعودی (A-Z)",
+            "SORT_LABEL_ALPHA_DESC": "حروفی نزولی (Z-A)",
+            "SORT_LABEL_NUM_ASC": "عددی صعودی",
+            "SORT_LABEL_NUM_DESC": "عددی نزولی",
+
+            "COLOR_SETUP_TOOLTIP": "تنظیم رنگ",
+            "COLOR_TACTIC_ROW_LABEL": "پس‌زمینهٔ ردیف تاکتیک",
+            "COLOR_SHOW_LABEL": "نمایش",
+            "COLOR_SCORE_GRADIENT_LABEL": "گرادیان امتیاز",
+            "COLOR_MIN_VALUE_LABEL": "کمترین مقدار:",
+            "COLOR_MAX_VALUE_LABEL": "بیشترین مقدار:",
+            "COLOR_REMOVE_BUTTON": "حذف",
+            "COLOR_ADD_BUTTON": "افزودن رنگ دیگر",
+            "COLOR_PRESETS_BUTTON": "پیش‌فرض‌ها",
+            "COLOR_PRESET_RED_GREEN": "قرمز به سبز",
+            "COLOR_PRESET_GREEN_RED": "سبز به قرمز",
+            "COLOR_PRESET_BLUE_RED": "آبی به قرمز",
+            "COLOR_PRESET_RED_BLUE": "قرمز به آبی",
+            "COLOR_PRESET_TRANSPARENT_BLUE": "شفاف به آبی",
+            "COLOR_PRESET_TRANSPARENT_RED": "شفاف به قرمز",
+
+            "HIDE_DISABLED_TOOLTIP_HIDE": "مخفی کردن تکنیک‌های غیرفعال",
+            "HIDE_DISABLED_TOOLTIP_SHOW": "نمایش تکنیک‌های غیرفعال",
+            "HIDE_DISABLED_LABEL_HIDE": "مخفی کردن غیرفعال‌ها",
+            "HIDE_DISABLED_LABEL_SHOW": "نمایش غیرفعال‌ها",
+
+            "SUBTECHNIQUES_TOOLTIP_EXPAND_ALL": "باز کردن همهٔ زیرتکنیک‌ها",
+            "SUBTECHNIQUES_TOOLTIP_EXPAND_ANNOTATED": "باز کردن زیرتکنیک‌های دارای حاشیه‌نویسی",
+            "SUBTECHNIQUES_TOOLTIP_COLLAPSE": "بستن زیرتکنیک‌ها",
+            "SUBTECHNIQUES_LABEL_EXPAND_ALL": "باز کردن همهٔ زیرتکنیک‌ها",
+            "SUBTECHNIQUES_LABEL_EXPAND_ANNOTATED": "باز کردن زیرتکنیک‌های حاشیه‌نویسی‌شده",
+            "SUBTECHNIQUES_LABEL_COLLAPSE": "بستن زیرتکنیک‌ها",
+
+            "LAYER_SETTINGS_TOOLTIP": "تنظیمات کنترل‌های لایه"
+        },
+        "TECHNIQUE": {
+            "DISABLE_TOOLTIP": "تغییر وضعیت",
+            "MANUAL_COLOR_TOOLTIP": "رنگ پس‌زمینه",
+            "SCORE_TOOLTIP": "امتیازدهی",
+            "SCORE_LABEL": "امتیاز",
+            "SCORE_NOT_NUMBER": "عدد نامعتبر",
+            "COMMENT_TOOLTIP": "یادداشت",
+            "COMMENT_LABEL": "یادداشت‌ها",
+            "LINK_TOOLTIP": "لینک",
+            "LINK_TOOLTIP_DISABLED": "نمی‌توان لینک‌ها را برای تکنیک‌های دارای لینک متفاوت ویرایش کرد",
+            "METADATA_TOOLTIP": "فراداده",
+            "METADATA_TOOLTIP_DISABLED": "نمی‌توان فراداده را برای تکنیک‌های دارای فرادادهٔ متفاوت ویرایش کرد",
+            "CLEAR_TOOLTIP": "حذف حاشیه‌نویسی‌ها از انتخاب‌شده‌ها",
+            "SETTINGS_TOOLTIP": "تنظیمات کنترل‌های تکنیک",
+            "NO_COLOR_LABEL": "بدون رنگ"
+        },
+        "TOOLBAR": {
+            "STICKY_TOOLTIP_ENABLE": "فعال کردن نوار ابزار چسبان",
+            "STICKY_TOOLTIP_DISABLE": "غیرفعال کردن نوار ابزار چسبان"
+        },
+        "LEGEND": {
+            "TITLE": "راهنما",
+            "ADD_ITEM": "افزودن آیتم",
+            "CLEAR": "پاک‌کردن",
+            "REMOVE_ITEM_ARIA": "حذف آیتم راهنما"
+        }
+    },
+
+    "COMMON": {
     "START": "شروع",
     "WARNING": "هشدار",
     "DISMISS": "بستن",
@@ -18,8 +143,81 @@
     "NONE": "هیچ‌کدام",
     "CREATE_LAYER": "ساخت لایه",
     "CUSTOM_NAVIGATOR_URL": "آدرس ناوبر سفارشی",
-    "COPIED": "کپی شد"
+    "COPIED": "کپی شد",
+    "CLOSE": "بستن",
+    "COMMENT": "کامنت",
+    "DISABLED": "غیرفعال",
+    "SCORE": "امتیاز",
+    "TECHNIQUES": "تکنیک‌ها",
+      "BACK": "بازگشت",
+      "NEXT": "بعدی",
+      "SKIP": "رد کردن",
+      "DONE": "انجام شد"
   },
+    "LAYER_SETTINGS": {
+        "INFO_TITLE": "اطلاعات لایه",
+        "NAME_LABEL": "نام",
+        "DESCRIPTION_LABEL": "توضیحات",
+        "DOMAIN_LABEL": "دامنه",
+        "VERSION_LABEL": "نسخه",
+
+        "METADATA_TITLE": "فراداده",
+        "LINKS_TITLE": "لینک‌ها",
+
+        "MATRIX_LAYOUT_TITLE": "چیدمان ماتریس",
+        "LAYOUT_OPTION": {
+            "side": "چیدمان ستونی (Side)",
+            "flat": "چیدمان تخت (Flat)",
+            "mini": "چیدمان کوچک (Mini)"
+        },
+
+        "LABELS_TITLE": "برچسب‌ها",
+        "SHOW_IDS": "نمایش IDها",
+        "SHOW_NAMES": "نمایش نام‌ها",
+
+        "AGGREGATE_SCORES_TITLE": "تجمیع امتیازها",
+        "SHOW_AGG_SCORES": "نمایش امتیازهای تجمیعی",
+        "COUNT_UNSCORED_AS_ZERO": "محاسبهٔ تکنیک‌های بدون امتیاز به صورت ۰",
+        "AGG_FUNC_LABEL": "تابع تجمیع",
+        "AGG_FUNC_OPTION": {
+            "average": "میانگین (average)",
+            "sum": "جمع (sum)",
+            "max": "بیشینه (max)",
+            "min": "کمینه (min)"
+        }
+    },
+
+    "LAYER_UPGRADE": {
+        "TITLE": "به‌روزرسانی لایه",
+        "DESCRIPTION": "تکنیک‌هایی را که از نسخهٔ ATT&CK v{{fromVersion}} تا نسخهٔ فعلی اضافه، تغییر، جایگزین یا حذف شده‌اند مرور کنید و لایهٔ Navigator خود را با این تغییرات به‌روزرسانی کنید.",
+        "VIEW_VERSIONS": "مشاهدهٔ نسخه‌های ATT&CK",
+
+        "STEP_LABEL_REVIEW": "بازبینی {{section}}",
+        "OPTIONS_TITLE": "گزینه‌ها",
+
+        "FILTER_ANNOTATED_ONLY": "فقط تکنیک‌های دارای حاشیه‌نویسی نمایش داده شود",
+        "FILTER_ANNOTATED_ONLY_TOOLTIP": "هیچ تکنیک حاشیه‌نویسی‌شده‌ای وجود ندارد",
+        "FILTER_REVIEW_ALL_LABEL": "علامت‌زدن همه به‌عنوان بازبینی‌شده",
+        "FILTER_EXPAND_VISIBLE_LABEL": "باز کردن تکنیک‌های قابل‌مشاهده",
+
+        "DND_TOOLTIP": "برای کپی کردن حاشیه‌نویسی‌ها به تاکتیک‌های موردنظر در ATT&CK v{{version}} بکشید و رها کنید.",
+        "CLEAR_ANNOTATIONS_TOOLTIP": "حذف حاشیه‌نویسی‌ها",
+        "COPY_ANNOTATIONS_TOOLTIP": "کپی کردن حاشیه‌نویسی‌ها",
+        "REVERT_COPY_TOOLTIP": "برگرداندن تغییرات کپی",
+
+        "REVIEWED_LABEL": "بازبینی شد",
+        "NO_OBJECTS": "شیئی برای نمایش وجود ندارد",
+
+        "STEP_REVIEWED_COUNTER": "{{reviewed}} از {{total}} تکنیک بازبینی شد",
+
+        "FINISH_STEP": "پایان",
+        "OVERVIEW_TITLE": "خلاصه",
+
+        "SUMMARY_REVIEWED": "{{reviewed}} از {{total}} تکنیک بازبینی شد",
+        "SUMMARY_REVIEWED_ANNOTATED": "{{reviewed}} از {{total}} تکنیک حاشیه‌نویسی‌شده بازبینی شد",
+        "SUMMARY_NO_OBJECTS": "شیئی برای بازبینی وجود ندارد",
+        "SUMMARY_SKIPPED": "رد شد"
+    },
   "TABS": {
     "SAFARI_WARNING_P1": "تشخیص دادیم که شما از مرورگر Safari استفاده می‌کنید. از نسخه 4.3 ناوبر به بعد، نسخه‌های 13 و پایین‌تر Safari به دلیل یک مشکل فریز غیرقابل‌رفع هنگام انتخاب تب لایه پشتیبانی نمی‌شوند.",
     "SAFARI_WARNING_P2": "پیشنهاد می‌کنیم از Chrome یا Firefox استفاده کنید. همچنان می‌توانید ناوبر را در Safari (نسخه‌های 13 و پایین‌تر) اجرا کنید، اما ممکن است در صورت فریز شدن برنامه، بخشی از کار خود را از دست بدهید.",
@@ -83,48 +281,253 @@
     "FILTERS_HELP": "لایه‌ای را که می‌خواهید فیلترها از آن وارد شوند انتخاب کنید. برای شروع بدون فیلتر، این قسمت را خالی بگذارید.",
     "LEGEND_HELP": "لایه‌ای را که می‌خواهید راهنما (Legend) از آن وارد شود انتخاب کنید. برای شروع با راهنمای خالی، این قسمت را خالی بگذارید."
   },
-  "CONFIG": {
-    "CUSTOMIZE": {
-      "multiselect": {
-        "LABEL": "پنل چند‌انتخابی",
-        "DESC": "برای حذف پنل چند‌انتخابی از رابط کاربری، این گزینه را غیرفعال کنید."
-      },
-      "export_render": {
-        "LABEL": "دکمه رندر لایه",
-        "DESC": "برای حذف دکمه رندر کردن لایه فعلی، این گزینه را غیرفعال کنید."
-      },
-      "export_excel": {
-        "LABEL": "دکمه خروجی Excel",
-        "DESC": "برای حذف دکمه خروجی گرفتن لایه فعلی در قالب MS Excel (.xlsx)، این گزینه را غیرفعال کنید."
-      },
-      "legend": {
-        "LABEL": "پنل راهنما (Legend)",
-        "DESC": "برای حذف پنل راهنما از رابط کاربری، این گزینه را غیرفعال کنید."
-      },
-      "background_color": {
-        "LABEL": "افکت رنگ پس‌زمینه",
-        "DESC": "برای حذف افکت رنگ پس‌زمینه روی رنگ‌های دستی، این گزینه را غیرفعال کنید."
-      },
-      "non_aggregate_score_color": {
-        "LABEL": "رنگ امتیازهای غیرتجمیعی",
-        "DESC": "برای حذف افکت رنگ روی امتیازهای غیرتجمیعی، این گزینه را غیرفعال کنید."
-      },
-      "aggregate_score_color": {
-        "LABEL": "رنگ امتیازهای تجمیعی",
-        "DESC": "برای حذف افکت رنگ روی امتیازهای تجمیعی، این گزینه را غیرفعال کنید."
-      },
-      "comment_underline": {
-        "LABEL": "زیرخط یادداشت‌ها",
-        "DESC": "برای حذف زیرخط مخصوص یادداشت‌ها روی تکنیک‌ها، این گزینه را غیرفعال کنید."
-      },
-      "metadata_underline": {
-        "LABEL": "زیرخط فراداده",
-        "DESC": "برای حذف زیرخط مخصوص فراداده روی تکنیک‌ها، این گزینه را غیرفعال کنید."
-      },
-      "link_underline": {
-        "LABEL": "زیرخط لینک",
-        "DESC": "برای حذف زیرخط لینک روی تکنیک‌ها، این گزینه را غیرفعال کنید."
-      }
+    "CONFIG": {
+        "CUSTOMIZE": {
+            "multiselect": {
+                "LABEL": "پنل چند‌انتخابی",
+                "DESC": "برای حذف پنل چند‌انتخابی از رابط کاربری، این گزینه را غیرفعال کنید."
+            },
+            "export_render": {
+                "LABEL": "دکمه رندر لایه",
+                "DESC": "برای حذف دکمه رندر کردن لایه فعلی، این گزینه را غیرفعال کنید."
+            },
+            "export_excel": {
+                "LABEL": "دکمه خروجی Excel",
+                "DESC": "برای حذف دکمه خروجی گرفتن لایه فعلی در قالب MS Excel (.xlsx)، این گزینه را غیرفعال کنید."
+            },
+            "legend": {
+                "LABEL": "پنل راهنما (Legend)",
+                "DESC": "برای حذف پنل راهنما از رابط کاربری، این گزینه را غیرفعال کنید."
+            },
+            "background_color": {
+                "LABEL": "افکت رنگ پس‌زمینه",
+                "DESC": "برای حذف افکت رنگ پس‌زمینه روی رنگ‌های دستی، این گزینه را غیرفعال کنید."
+            },
+            "non_aggregate_score_color": {
+                "LABEL": "رنگ امتیازهای غیرتجمیعی",
+                "DESC": "برای حذف افکت رنگ روی امتیازهای غیرتجمیعی، این گزینه را غیرفعال کنید."
+            },
+            "aggregate_score_color": {
+                "LABEL": "رنگ امتیازهای تجمیعی",
+                "DESC": "برای حذف افکت رنگ روی امتیازهای تجمیعی، این گزینه را غیرفعال کنید."
+            },
+            "comment_underline": {
+                "LABEL": "زیرخط یادداشت‌ها",
+                "DESC": "برای حذف زیرخط مخصوص یادداشت‌ها روی تکنیک‌ها، این گزینه را غیرفعال کنید."
+            },
+            "metadata_underline": {
+                "LABEL": "زیرخط فراداده",
+                "DESC": "برای حذف زیرخط مخصوص فراداده روی تکنیک‌ها، این گزینه را غیرفعال کنید."
+            },
+            "link_underline": {
+                "LABEL": "زیرخط لینک",
+                "DESC": "برای حذف زیرخط لینک روی تکنیک‌ها، این گزینه را غیرفعال کنید."
+            }
+        },
+        "FEATURES": {
+            "leave_site_dialog": {
+                "LABEL": "دیالوگ خروج از صفحه",
+                "DESC": "برای حذف پنجرهٔ هشدار هنگام ترک سایت، این گزینه را غیرفعال کنید."
+            },
+            "tabs": {
+                "LABEL": "تب‌ها",
+                "DESC": "برای حذف امکان باز کردن تب‌های جدید، این گزینه را غیرفعال کنید."
+            },
+            "header": {
+                "LABEL": "سربرگ (Header)",
+                "DESC": "برای حذف سربرگ حاوی بنر، این گزینه را غیرفعال کنید."
+            },
+            "selection_controls": {
+                "LABEL": "کنترل‌های انتخاب",
+                "DESC": "برای غیرفعال کردن همهٔ زیر‌امکانات این بخش، این گزینه را غیرفعال کنید.",
+                "SUB": {
+                    "search": {
+                        "LABEL": "جستجو و چند‌انتخابی",
+                        "DESC": "برای حذف پنل جستجوی تکنیک از رابط کاربری، این گزینه را غیرفعال کنید."
+                    },
+                    "deselect_all": {
+                        "LABEL": "عدم انتخاب همهٔ تکنیک‌ها",
+                        "DESC": "برای حذف دکمهٔ لغو انتخاب همه تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "selecting_techniques": {
+                        "LABEL": "رفتار انتخاب",
+                        "DESC": "برای حذف قابلیت انتخاب تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    }
+                }
+            },
+            "layer_controls": {
+                "LABEL": "کنترل‌های لایه",
+                "DESC": "برای غیرفعال کردن همهٔ زیر‌امکانات این بخش، این گزینه را غیرفعال کنید.",
+                "SUB": {
+                    "layer_settings": {
+                        "LABEL": "تنظیمات لایه",
+                        "DESC": "برای حذف پنل اطلاعات لایه (نام، توضیحات و فراداده)، این گزینه را غیرفعال کنید. توجه: نام لایه هنوز از روی تب قابل تغییر است."
+                    },
+                    "download_layer": {
+                        "LABEL": "خروجی (Export)",
+                        "DESC": "برای حذف دکمهٔ دانلود لایه، این گزینه را غیرفعال کنید."
+                    },
+                    "filters": {
+                        "LABEL": "فیلترها",
+                        "DESC": "برای حذف پنل فیلترها از رابط کاربری، این گزینه را غیرفعال کنید."
+                    },
+                    "sorting": {
+                        "LABEL": "مرتب‌سازی",
+                        "DESC": "برای حذف دکمهٔ مرتب‌سازی از رابط کاربری، این گزینه را غیرفعال کنید."
+                    },
+                    "color_setup": {
+                        "LABEL": "تنظیمات رنگ",
+                        "DESC": "برای حذف پنل تنظیمات رنگ (گرادیان امتیازدهی و رنگ ردیف تاکتیک‌ها)، این گزینه را غیرفعال کنید."
+                    },
+                    "toggle_hide_disabled": {
+                        "LABEL": "نمایش/مخفی‌سازی غیرفعال‌ها",
+                        "DESC": "برای حذف دکمهٔ مخفی کردن تکنیک‌های غیرفعال، این گزینه را غیرفعال کنید."
+                    },
+                    "subtechniques": {
+                        "LABEL": "زیرتکنیک‌ها",
+                        "DESC": "برای حذف تمام قابلیت‌های مربوط به زیرتکنیک‌ها از رابط کاربری، این گزینه را غیرفعال کنید."
+                    }
+                }
+            },
+            "technique_controls": {
+                "LABEL": "کنترل‌های تکنیک",
+                "DESC": "برای غیرفعال کردن همهٔ زیر‌امکانات این بخش، این گزینه را غیرفعال کنید.",
+                "SUB": {
+                    "disable_techniques": {
+                        "LABEL": "تغییر وضعیت (فعال/غیرفعال)",
+                        "DESC": "برای حذف قابلیت غیرفعال کردن تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "manual_color": {
+                        "LABEL": "رنگ پس‌زمینه",
+                        "DESC": "برای حذف قابلیت اختصاص رنگ دستی به تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "scoring": {
+                        "LABEL": "امتیازدهی",
+                        "DESC": "برای حذف قابلیت امتیازدهی به تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "comments": {
+                        "LABEL": "یادداشت‌ها",
+                        "DESC": "برای حذف قابلیت افزودن یادداشت به تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "links": {
+                        "LABEL": "لینک‌ها",
+                        "DESC": "برای حذف قابلیت افزودن لینک به تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "metadata": {
+                        "LABEL": "فراداده",
+                        "DESC": "برای حذف قابلیت افزودن فراداده به تکنیک‌ها، این گزینه را غیرفعال کنید."
+                    },
+                    "clear_annotations": {
+                        "LABEL": "حذف همهٔ حاشیه‌نویسی‌ها روی انتخاب‌شده‌ها",
+                        "DESC": "برای حذف دکمه‌ای که همهٔ حاشیه‌نویسی‌های تکنیک‌های انتخاب‌شده را پاک می‌کند، این گزینه را غیرفعال کنید."
+                    }
+                }
+            },
+            "toolbar_controls": {
+                "LABEL": "کنترل‌های نوار ابزار",
+                "DESC": "برای غیرفعال کردن همهٔ زیر‌امکانات این بخش، این گزینه را غیرفعال کنید.",
+                "SUB": {
+                    "sticky_toolbar": {
+                        "LABEL": "تغییر وضعیت نوار ابزار چسبان",
+                        "DESC": "برای حذف قابلیت فعال/غیرفعال کردن نوار ابزار چسبان، این گزینه را غیرفعال کنید."
+                    }
+                }
+            }
+        }
+    },
+    "SVG_EXPORT": {
+        "IE_WARNING": "هشدار: این رابط کاربری به‌طور کامل با مرورگر شما سازگار نیست. برای بهترین نتیجه، لطفاً از Edge، Chrome یا Firefox استفاده کنید.",
+
+        "TOOLTIP_THEME": "تم",
+        "TOOLTIP_UNIT": "تغییر واحد اندازه‌گیری",
+        "TOOLTIP_IMAGE_SIZE": "اندازه تصویر",
+        "TOOLTIP_TEXT": "متن",
+        "TOOLTIP_LEGEND": "راهنما (Legend)",
+        "TOOLTIP_VISIBILITY": "تنظیمات نمایش",
+        "TOOLTIP_DOWNLOAD": "دانلود فایل SVG",
+
+        "ORIENTATION_LABEL": "جهت",
+        "ORIENTATION_PORTRAIT": "عمودی (Portrait)",
+        "ORIENTATION_LANDSCAPE": "افقی (Landscape)",
+
+        "SIZE_LABEL": "اندازه",
+        "SIZE_CUSTOM": "سفارشی",
+        "SIZE_LETTER": "US Letter: 8.5x11",
+        "SIZE_LEGAL": "US Legal: 8.5x14",
+        "SIZE_SMALL": "کوچک: 11x17",
+        "SIZE_MEDIUM": "متوسط: 18x24",
+        "SIZE_LARGE": "بزرگ: 24x36",
+
+        "WIDTH_LABEL": "عرض",
+        "HEIGHT_LABEL": "ارتفاع",
+        "HEADER_HEIGHT_LABEL": "ارتفاع هدر",
+
+        "FONT_LABEL": "فونت",
+        "FONT_SERIF": "serif",
+        "FONT_SANS_SERIF": "sans-serif",
+        "FONT_MONOSPACE": "monospace",
+        "FONT_SIZE_LABEL": "اندازه فونت",
+        "TEXT_OVERFLOW_WARNING": "متن سلول از کادر خارج شده است",
+        "AUTO_FIT_LABEL": "تنظیم خودکار اندازه فونت",
+
+        "LEGEND_DOCKED_LABEL": "قرار دادن راهنما در هدر",
+        "LEGEND_X_LABEL": "موقعیت افقی راهنما (X)",
+        "LEGEND_Y_LABEL": "موقعیت عمودی راهنما (Y)",
+        "LEGEND_WIDTH_LABEL": "عرض راهنما",
+        "LEGEND_HEIGHT_LABEL": "ارتفاع راهنما",
+
+        "SHOW_HEADER_LABEL": "نمایش هدر",
+        "SHOW_ABOUT_LABEL": "نمایش بخش «درباره»",
+        "SHOW_DOMAIN_LABEL": "نمایش دامنه",
+        "SHOW_FILTERS_LABEL": "نمایش فیلترها",
+        "SHOW_LEGEND_LABEL": "نمایش راهنما",
+        "SHOW_GRADIENT_LABEL": "نمایش گرادیان امتیاز",
+
+        "SUBTECHNIQUES_LABEL": "زیرتکنیک‌ها",
+        "SUBTECHNIQUES_SHOW_ALL": "نمایش همه",
+        "SUBTECHNIQUES_SHOW_EXPANDED": "نمایش حالت‌های بازشده",
+        "SUBTECHNIQUES_SHOW_NONE": "عدم نمایش",
+
+        "APPLY": "اعمال",
+        "CELL_BORDER_LABEL": "خط دور سلول",
+        "LOADING": "در حال بارگذاری..."
+    },
+    "SEARCH_PANEL": {
+        "SEARCH_PLACEHOLDER": "جستجو",
+        "SETTINGS_TITLE": "تنظیمات جستجو",
+
+        "TECHNIQUES_HEADER": "تکنیک‌ها ({{count}})",
+        "STIX_TYPE_HEADER": "{{label}} ({{count}})",
+        "DATA_COMPONENTS_HEADER": "مولفه‌های داده ({{count}})",
+
+        "SELECT_ALL": "انتخاب همه",
+        "DESELECT_ALL": "لغو انتخاب همه",
+        "VIEW": "نمایش",
+        "SELECT": "انتخاب",
+        "DESELECT": "لغو انتخاب",
+
+        "NO_RESULTS_TECHNIQUES": "هیچ نتیجه‌ای برای تکنیک‌ها یافت نشد",
+        "NO_RESULTS_FOR": "هیچ نتیجه‌ای برای {{label}} یافت نشد",
+        "NO_RESULTS_DATA_SOURCES": "هیچ نتیجه‌ای برای منابع داده یافت نشد"
+    },
+    "CONTEXT_MENU": {
+        "PIN_UNPIN_TOOLTIP": "پین / آن‌پین کردن تولتیپ",
+
+        "SELECT": "انتخاب",
+        "ADD_TO_SELECTION": "افزودن به انتخاب‌ها",
+        "REMOVE_FROM_SELECTION": "حذف از انتخاب‌ها",
+
+        "SELECT_ALL": "انتخاب همه",
+        "DESELECT_ALL": "لغو انتخاب همه",
+        "INVERT_SELECTION": "معکوس کردن انتخاب",
+
+        "SELECT_ANNOTATED": "انتخاب موارد دارای حاشیه‌نویسی",
+        "SELECT_UNANNOTATED": "انتخاب موارد بدون حاشیه‌نویسی",
+
+        "SELECT_ALL_IN_TACTIC": "انتخاب همهٔ تکنیک‌های این تاکتیک",
+        "DESELECT_ALL_IN_TACTIC": "لغو انتخاب همهٔ تکنیک‌های این تاکتیک",
+
+        "VIEW_TECHNIQUE": "نمایش تکنیک",
+        "VIEW_TACTIC": "نمایش تاکتیک"
     }
-  }
 }
