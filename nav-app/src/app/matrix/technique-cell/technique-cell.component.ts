@@ -4,6 +4,7 @@ import { Technique, Tactic, Matrix } from '../../classes/stix';
 import { ConfigService } from '../../services/config.service';
 import { Cell } from '../cell';
 import { ViewModelsService } from '../../services/viewmodels.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'technique-cell',
@@ -36,7 +37,8 @@ export class TechniqueCellComponent extends Cell implements OnInit {
     constructor(
         public dataService: DataService,
         public configService: ConfigService,
-        public viewModelsService: ViewModelsService
+        public viewModelsService: ViewModelsService,
+        private translate: TranslateService
     ) {
         super(dataService, configService);
     }
@@ -44,6 +46,37 @@ export class TechniqueCellComponent extends Cell implements OnInit {
     ngOnInit(): void {
         // intentionally left blank
     }
+
+    get displayName(): string {
+        let lang = 'en';
+
+        try {
+            if (this.translate && typeof this.translate.getCurrentLang === 'function') {
+                lang = this.translate.getCurrentLang() || 'en';
+            } else if (
+                this.translate &&
+                typeof this.translate.getFallbackLang === 'function'
+            ) {
+                lang = this.translate.getFallbackLang() || 'en';
+            }
+        } catch {
+            lang = 'en';
+        }
+
+        const technique: any = this.technique as any;
+        console.log("lang", technique);
+
+        if (
+            lang === 'fa' &&
+            technique?.name_fa &&
+            String(technique.name_fa).trim().length > 0
+        ) {
+            return technique.name_fa;
+        }
+
+        return technique?.name || '';
+    }
+
 
     // count number of annotated sub-techniques on this technique
     public annotatedSubtechniques(): number {

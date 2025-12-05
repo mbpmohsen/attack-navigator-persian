@@ -13,11 +13,18 @@ export abstract class StixObject {
     public readonly version: string; // object version
     protected readonly dataService: DataService;
 
+    public readonly name_fa?: string;
+    public readonly description_fa?: string;
+
     constructor(stixSDO: any, dataService: DataService, supportsAttackID = true) {
         // Properties
         this.id = stixSDO.id;
         this.name = stixSDO.name;
         this.description = stixSDO?.description ?? "";
+
+        this.name_fa = stixSDO.name_fa ?? undefined;
+        this.description_fa = stixSDO.description_fa ?? undefined;
+
         this.created = stixSDO.created;
         this.modified = stixSDO.modified;
         this.revoked = stixSDO.revoked ? stixSDO.revoked : false;
@@ -77,5 +84,13 @@ export abstract class StixObject {
         let rels = this.dataService.getDomain(domainVersionID).relationships.revoked_by;
         if (rels.has(this.id)) return rels.get(this.id);
         else return undefined;
+    }
+
+    public getDisplayName(lang: 'en' | 'fa'): string {
+        return lang === 'fa' ? this.name_fa ?? this.name : this.name;
+    }
+
+    public getDisplayDescription(lang: 'en' | 'fa'): string {
+        return lang === 'fa' ? this.description_fa ?? this.description : this.description;
     }
 }
